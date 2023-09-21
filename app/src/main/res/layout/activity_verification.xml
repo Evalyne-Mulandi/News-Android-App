@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".verification">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sfsemibold"
+        android:text="@string/verification_code"
+        android:textSize="28sp"
+        android:layout_marginStart="20dp"
+
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="50dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/textView17"
+        android:text="@string/you_need_to_enter_4_digit_code_we_send_to_your_email"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="107dp" />
+
+    <EditText
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+        android:id="@+id/n"
+        android:layout_below="@id/textView18"
+        android:hint="1"
+        android:textColor="@color/black"
+        android:padding="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/grey_lighter" />
+    <EditText
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+
+        android:layout_below="@id/textView18"
+        android:hint="2"
+        android:textColor="@color/black"
+        android:padding="20dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/grey_lighter" />
+    <EditText
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+
+        android:layout_below="@id/textView18"
+        android:hint="3"
+        android:textColor="@color/black"
+        android:padding="20dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/grey_lighter" />
+    <EditText
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+
+        android:layout_below="@id/textView18"
+        android:hint="-"
+        android:textColor="@color/black"
+        android:padding="20dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/grey_lighter" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="10dp"
+        android:width="330dp"
+        android:height="56dp"
+        android:gravity="center"
+        android:text="@string/confirm"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/roundshapebutton"
+        />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="550dp"
+        android:gravity="center"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="5dp"
+        android:textSize="20sp"
+        android:text="@string/didnt_receive_an_email_send_again"
+          />
+</RelativeLayout>

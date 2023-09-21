@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".welcome">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="496dp"
+        android:layout_height="316dp"
+
+        android:fontFamily="@font/sfsemibold"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/illustration"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="183dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="127dp"
+        android:layout_below="@id/imageView2"
+        android:gravity="center"
+        android:text="@string/Nuntium"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:fontFamily="@font/sfregular"
+        android:text="@string/All_news_in_one_place_be_the_first_to_know_last_news"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="79dp"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="493dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:width="330dp"
+        android:height="56dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="24dp"
+
+        android:gravity="center"
+        android:text="@string/Get_started"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="609dp"
+        android:background="@drawable/roundshapebutton"/>
+
+
+
+
+</RelativeLayout>

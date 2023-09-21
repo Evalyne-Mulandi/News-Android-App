@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Onboarding"
+    android:src="@drawable/images">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="292dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/images"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/imageView3"
+        android:text="@string/First_to_Know"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="@string/All_news_in_one_place_be_the_first_to_know_last_news"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_marginStart="24dp"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:width="330dp"
+        android:height="56dp"
+        android:gravity="center"
+        android:text="@string/Next"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/roundshapebutton"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="56dp"
+        android:layout_height="8dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="159dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/steps" />
+
+
+
+
+</RelativeLayout>

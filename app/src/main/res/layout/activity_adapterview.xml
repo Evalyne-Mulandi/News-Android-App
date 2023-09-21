@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adapterview">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="373dp"
+        android:scaleType="fitXY"
+
+        app:srcCompat="@drawable/image"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-31dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="match_parent"
+        android:layout_height="394dp"
+        android:layout_below="@id/imageView7"
+        android:layout_marginTop="-36dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/contentbg" />
+
+
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_marginTop="250dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/latest_situation_in_presidential_election"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="505dp" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView7"
+        android:layout_marginTop="10dp"
+        android:text="@string/results"
+        android:textSize="25sp"
+        android:layout_marginStart="10dp"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="399dp" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView26"
+        android:textSize="25sp"
+        android:layout_marginStart="20dp"
+        android:text="@string/Leads_in_individual_states_may_change_from_one_party_to_another_as_all_the_votes_are_counted_Select_a_state_for_detailed_results_and_select_the_Senate_House_or_Governor_tabs_to_view_those_races_for_more_detailed_state_results_click_on_the_States_AZ_links_at_the_bottom_of_this_page_Results_source_NEP_Edison_via_Reuters"
+
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="596dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="47dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/bookmarkicon" />
+
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="66dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/lefticon" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="50dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginStart="350dp"
+        android:src="@drawable/shareicon" />
+
+
+
+
+</RelativeLayout>

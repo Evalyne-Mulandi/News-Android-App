@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">SplashScreen</string>
+    <string name="First_to_Know">First to know</string>
+    <string name="Next">Next</string>
+    <string name="search">search</string>
+    <string name="latest_situation_in_presidential_election">latest situation in presidential election</string>
+    <string name="results">Results</string>
+    <string name="Leads_in_individual_states_may_change_from_one_party_to_another_as_all_the_votes_are_counted_Select_a_state_for_detailed_results_and_select_the_Senate_House_or_Governor_tabs_to_view_those_races_for_more_detailed_state_results_click_on_the_States_AZ_links_at_the_bottom_of_this_page_Results_source_NEP_Edison_via_Reuters">Leads in individual states may change from one party to another as all the votes are counted. Select a state for detailed results, and select the Senate, House or Governor tabs to view those races.
+For more detailed state results click on the States A-Z links at the bottom of this page. Results source: NEP/Edison via Reuters.</string>
+    <string name="politics">⚖️   Politics</string>
+    <string name="sports">🏈   Sports</string>
+    <string name="A_simple_trick_for_creating_color_patterns_quickly">A simple trick for creating color patterns quickly</string>
+    <string name="life">🌞   Life</string>
+    <string name="browse">Browse</string>
+    <string name="discover_things_of_this_world">Discover things of this world</string>
+    <string name="username">username</string>
+    <string name="select_your_favorite_topics">select your favorite topics</string>
+    <string name="select_some_of_your_favorite_topics_to_let_us_suggest_better_news_for_you">select some of your favorite topics to let us suggest better news for you</string>
+    <string name="welcome_to_nuntium"> welcome to Nuntium👋</string>
+    <string name="sign_up">sign up</string>
+    <string name="hello_i_guess_you_are_new_around_here_you_can_start_using_the_application_after_sign_up"> Hello i guess you are new around here you can start using the application after sign up</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="verification_code">verification code✅</string>
+    <string name="already_have_an_account_sign_in">Already have an account?sign in</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm">confirm</string>
+    <string name="repeat_new_password">Repeat New Password</string>
+    <string name="you_need_to_enter_4_digit_code_we_send_to_your_email">you need to enter  4 digit code we send to your email</string>
+    <string name="remember_password_try_again">Remember password? try again</string>
+    <string name="didnt_receive_an_email_send_again">Didnt receive an email ?send again</string>
+    <string name="create_new_password">Create New Password🔒</string>
+    <string name="you_can_create_a_new_password_dont_forget_it_too">You can create a new password dont forget it too</string>
+    <string name="or">or</string>
+    <string name="Nuntium">Nuntium</string>
+    <string name="sign_in_with_google">sign in with google</string>
+    <string name="Dont_have_an_account_sign_up">Dont have an account? sign up</string>
+    <string name="sign_in_with_facebook">sign in with facebook</string>
+    <string name="password">password</string>
+    <string name="sign_in">sign in</string>
+    <string name="we_need_your_email_address_so_that_we_can_send_you_the_password_reset_code">we need your email address so that we can send you the password reset code</string>
+    <string name="forgot_word">Forgot password🤭</string>
+    <string name="forgot_password">forgot password?</string>
+    <string name="email_address">Email address</string>
+    <string name="welcome_back">Welcome Back👋</string>
+    <string name="i_am_happy_to_see_you_again_continue_where_you_left_by_sigining_in">I am happy to see you again continue where ypu left by sigining in</string>
+    <string name="Get_started">Get Started</string>
+    <string name="All_news_in_one_place_be_the_first_to_know_last_news">All news in one place be the first to know last news</string>
+
+
+</resources>
