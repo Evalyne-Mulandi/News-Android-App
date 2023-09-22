@@ -56,7 +56,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textView26"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:layout_marginStart="20dp"
         android:text="@string/Leads_in_individual_states_may_change_from_one_party_to_another_as_all_the_votes_are_counted_Select_a_state_for_detailed_results_and_select_the_Senate_House_or_Governor_tabs_to_view_those_races_for_more_detailed_state_results_click_on_the_States_AZ_links_at_the_bottom_of_this_page_Results_source_NEP_Edison_via_Reuters"
 

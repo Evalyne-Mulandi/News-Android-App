@@ -10,11 +10,15 @@ import android.widget.EditText;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Toast;
+import android.widget.TextView;
+
 
 public class Signin extends AppCompatActivity {
     Button bValidate;
     EditText etMail;
     EditText etPassword;
+    TextView textView;
+    TextView forgotPassTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +28,26 @@ public class Signin extends AppCompatActivity {
         etPassword=findViewById(R.id.password);
 
         bValidate = findViewById(R.id.button3);
+
+        textView = findViewById(R.id.textView10);
+
+        forgotPassTextView = findViewById(R.id.textView6);
+
+
+
+        textView.setOnClickListener(v -> {
+            // Start the new activity here
+            Intent intent = new Intent(Signin.this, nuntium.class);
+            startActivity(intent);
+        });
+
+
+        forgotPassTextView.setOnClickListener(v -> {
+            // Start the new activity here
+            Intent intent = new Intent(Signin.this, forgotpassword.class);
+            startActivity(intent);
+        });
+
 
 
         bValidate.setOnClickListener(new View.OnClickListener() {
