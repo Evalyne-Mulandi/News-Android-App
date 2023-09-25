@@ -4,14 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.widget.Button;
-import android.widget.EditText;
 import android.util.Patterns;
 import android.view.View;
-import android.widget.Toast;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
-
+import android.widget.Toast;
+import android.text.Editable;
+import android.text.TextWatcher;
 
 public class Signin extends AppCompatActivity {
     Button bValidate;
@@ -25,14 +25,16 @@ public class Signin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
         etMail = findViewById(R.id.email_address);
-        etPassword=findViewById(R.id.password);
+        etPassword = findViewById(R.id.password);
 
         bValidate = findViewById(R.id.button3);
-
         textView = findViewById(R.id.textView10);
-
         forgotPassTextView = findViewById(R.id.textView6);
 
+        // Create a default background drawable for etMail
+        etMail.setBackgroundResource(R.drawable.backgrounchange);
+
+        // Add a TextWatcher to etMail for changing the background drawable
 
 
         textView.setOnClickListener(v -> {
@@ -41,59 +43,48 @@ public class Signin extends AppCompatActivity {
             startActivity(intent);
         });
 
-
         forgotPassTextView.setOnClickListener(v -> {
             // Start the new activity here
-            Intent intent = new Intent(Signin.this, forgotpassword.class);
+            Intent intent = new Intent(Signin.this,forgotpassword.class);
             startActivity(intent);
         });
 
-
-
-        bValidate.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                emailValidator(etMail);
-
-
-            }
-        });
-
-
-
+        bValidate.setOnClickListener(v -> emailValidator(etMail));
     }
+
     public void emailValidator(EditText etMail) {
-
-
         String emailToText = etMail.getText().toString();
         String passwordText = etPassword.getText().toString();
 
+        etMail.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                // No need to do anything before text changes
+            }
 
-        if (!emailToText.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(emailToText).matches())
-             {
-                 if (!passwordText.isEmpty()){
-            Toast.makeText(this, "Email Verified !", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(Signin.this, forgotpassword.class);
-            startActivity(intent);
-             } else {
-            Toast.makeText(Signin.this, "Password cannot be empty!", Toast.LENGTH_SHORT).show();
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                // Change the background drawable when text is being typed
+                etMail.setBackgroundResource(R.drawable.background);
+            }
 
-        }
+            @Override
+            public void afterTextChanged(Editable s) {
+                // Change the background drawable back to the default when text input is done
+                etMail.setBackgroundResource(R.drawable.backgrounchange);
+            }
+        });
+
+        if (!emailToText.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(emailToText).matches()) {
+            if (!passwordText.isEmpty()) {
+                Toast.makeText(this, "Email Verified !", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Signin.this, selecetfavorite.class);
+                startActivity(intent);
+            } else {
+                Toast.makeText(Signin.this, "Password cannot be empty!", Toast.LENGTH_SHORT).show();
+            }
         } else {
-            Toast.makeText(this, "Enter valid Email address !", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Enter a valid Email address !", Toast.LENGTH_SHORT).show();
         }
     }
-
-
-
-
-
 }
-
-
-
-
-
-
-

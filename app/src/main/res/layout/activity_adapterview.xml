@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="match_parent"
-        android:layout_height="373dp"
+        android:layout_height="300dp"
         android:scaleType="fitXY"
 
         app:srcCompat="@drawable/image"
@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="394dp"
         android:layout_below="@id/imageView7"
-        android:layout_marginTop="-36dp"
+        android:layout_marginTop="-10dp"
         android:scaleType="fitXY"
         android:src="@drawable/contentbg" />
 
@@ -29,13 +29,13 @@
 
     <TextView
         android:id="@+id/textView27"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="230dp"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/latest_situation_in_presidential_election"
         android:textColor="@color/white"
-        android:textSize="30sp"
+        android:textSize="20sp"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="505dp" />
 
@@ -46,7 +46,7 @@
         android:layout_below="@id/imageView7"
         android:layout_marginTop="10dp"
         android:text="@string/results"
-        android:textSize="25sp"
+        android:textSize="16sp"
         android:layout_marginStart="10dp"
         tools:layout_editor_absoluteX="74dp"
         tools:layout_editor_absoluteY="399dp" />
@@ -56,8 +56,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textView26"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:layout_marginStart="20dp"
+        android:textColor="@color/grey_primary"
         android:text="@string/Leads_in_individual_states_may_change_from_one_party_to_another_as_all_the_votes_are_counted_Select_a_state_for_detailed_results_and_select_the_Senate_House_or_Governor_tabs_to_view_those_races_for_more_detailed_state_results_click_on_the_States_AZ_links_at_the_bottom_of_this_page_Results_source_NEP_Edison_via_Reuters"
 
         tools:layout_editor_absoluteX="32dp"
@@ -65,11 +66,11 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="47dp"
-        android:layout_height="43dp"
-        android:layout_marginLeft="300dp"
-        android:layout_marginStart="350dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="80dp"
         android:src="@drawable/bookmarkicon" />
 
 
@@ -86,11 +87,12 @@
 
     <ImageView
         android:id="@+id/imageView11"
-        android:layout_width="50dp"
-        android:layout_height="54dp"
-        android:layout_marginLeft="300dp"
-        android:layout_marginTop="190dp"
-        android:layout_marginStart="350dp"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="300dp"
         android:src="@drawable/shareicon" />
 
 

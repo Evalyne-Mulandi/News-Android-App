@@ -48,7 +48,7 @@
         android:gravity="center"
         android:text="@string/All_news_in_one_place_be_the_first_to_know_last_news"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/grey_primary"
         android:textSize="20sp" />
 
     <Button

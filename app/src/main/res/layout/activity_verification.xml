@@ -29,6 +29,7 @@
         android:layout_marginEnd="19dp"
         android:layout_marginTop="10dp"
         android:layout_below="@id/textView17"
+        android:textColor="@color/grey_primary"
         android:text="@string/you_need_to_enter_4_digit_code_we_send_to_your_email"
         tools:layout_editor_absoluteX="61dp"
         tools:layout_editor_absoluteY="107dp" />
@@ -39,12 +40,14 @@
         android:id="@+id/n"
         android:layout_below="@id/textView18"
         android:hint="1"
+        android:backgroundTint="@color/grey_lighter"
         android:textColor="@color/black"
-        android:padding="20dp"
+        android:padding="25dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="200dp"
         android:layout_marginTop="30dp"
-        android:background="@color/grey_lighter" />
+        android:background="@drawable/backgrounchange" />
+
     <EditText
         android:layout_width="65dp"
         android:layout_height="70dp"
@@ -52,41 +55,47 @@
         android:layout_below="@id/textView18"
         android:hint="2"
         android:textColor="@color/black"
-        android:padding="20dp"
-        android:layout_marginStart="130dp"
+        android:padding="25dp"
+        android:backgroundTint="@color/grey_lighter"
+        android:layout_marginStart="110dp"
         android:layout_marginEnd="20dp"
         android:layout_marginTop="30dp"
-        android:background="@color/grey_lighter" />
+        android:background="@drawable/backgrounchange" />
+
+
     <EditText
         android:layout_width="65dp"
         android:layout_height="70dp"
 
         android:layout_below="@id/textView18"
         android:hint="3"
+        android:backgroundTint="@color/grey_lighter"
         android:textColor="@color/black"
         android:padding="20dp"
-        android:layout_marginStart="230dp"
-        android:layout_marginEnd="200dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginTop="30dp"
-        android:background="@color/grey_lighter" />
+        android:background="@drawable/backgrounchange" />
     <EditText
         android:layout_width="65dp"
         android:layout_height="70dp"
+        android:background="@drawable/backgrounchange"
 
         android:layout_below="@id/textView18"
         android:hint="-"
+        android:backgroundTint="@color/grey_lighter"
         android:textColor="@color/black"
-        android:padding="20dp"
-        android:layout_marginStart="320dp"
-        android:layout_marginEnd="200dp"
+        android:padding="25dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginEnd="250dp"
         android:layout_marginTop="30dp"
-        android:background="@color/grey_lighter" />
+         />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="300dp"
         android:layout_marginEnd="19dp"
         android:layout_marginBottom="10dp"
@@ -106,9 +115,11 @@
 
         android:layout_marginTop="550dp"
         android:gravity="center"
-        android:layout_marginStart="59dp"
-        android:layout_marginEnd="5dp"
+
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="51dp"
         android:textSize="20sp"
+        android:textColor="@color/grey_primary"
         android:text="@string/didnt_receive_an_email_send_again"
           />
 </RelativeLayout>

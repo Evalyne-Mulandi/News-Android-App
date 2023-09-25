@@ -51,14 +51,14 @@ public class  browse extends AppCompatActivity {
         buttons = new Button[]{
                 findViewById(R.id.sports_topic_button),
                 findViewById(R.id.politics_topic_button),
-//                findViewById(R.id.life_topic_button),
+                findViewById(R.id.life_topic_button),
                 findViewById(R.id.gaming_topic_button),
-//                findViewById(R.id.animals_topic_button),
-//                findViewById(R.id.nature_topic_button),
-//                findViewById(R.id.food_topic_button),
-//                findViewById(R.id.art_topic_button),
-//                findViewById(R.id.history_topic_button),
-//                findViewById(R.id.fashion_topic_button)
+                findViewById(R.id.animals_topic_button),
+                findViewById(R.id.nature_topic_button),
+                findViewById(R.id.food_topic_button),
+                findViewById(R.id.art_topic_button),
+                findViewById(R.id.history_topic_button),
+                findViewById(R.id.fashion_topic_button)
         };
 
         SharedPreferences sharedPreferences = getSharedPreferences("Saved Buttons", MODE_PRIVATE);

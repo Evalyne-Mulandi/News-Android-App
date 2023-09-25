@@ -26,7 +26,7 @@
         android:layout_marginTop="2dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="19dp"
-        android:textColor="@color/black"
+        android:textColor="@color/grey_primary"
         android:textSize="20sp"
         android:text="@string/discover_things_of_this_world"
         tools:layout_editor_absoluteX="108dp"
@@ -38,37 +38,41 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/textView24"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/grey_lighter"
         android:background="@color/grey_lighter"
-
         android:drawableEnd="@drawable/microphone"
-
-        android:text="@string/search"
+        android:hint="@string/search"
         android:textAlignment="center"
 
         android:padding="20dp"
         android:textColor="@color/black" />
 
-    <LinearLayout
+
+    <HorizontalScrollView
         android:id="@+id/first_topics_container"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_bar"
+        android:layout_marginTop="10dp">
+    <LinearLayout
+
+        android:layout_width="wrap_content"
         android:layout_height="74dp"
         android:orientation="horizontal"
-
+        android:weightSum="10"
         android:layout_marginTop="10dp"
-        android:layout_below="@id/search_bar"
+
 
         >
         <Button
             android:id="@+id/random_news_button"
-
-            android:layout_width="350dp"
-            android:layout_height="40dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:layout_weight="1"
             android:layout_margin="8dp"
-
             android:textAllCaps="false"
             android:text="random"
             android:fontFamily="@font/sfsemibold"
@@ -79,14 +83,13 @@
         <Button
             android:id="@+id/sports_topic_button"
 
-            android:layout_width="350dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_weight="1"
             android:layout_marginEnd="16dp"
             android:textAllCaps="false"
             android:text="sports"
             android:layout_margin="8dp"
-
             android:fontFamily="@font/sfsemibold"
             android:textSize="16sp"
             android:textColor="@color/grey_darker"
@@ -94,12 +97,10 @@
 
         <Button
             android:id="@+id/gaming_topic_button"
-
-            android:layout_width="350dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_weight="1"
             android:layout_margin="8dp"
-
             android:textAllCaps="false"
             android:text="gaming"
             android:fontFamily="@font/sfsemibold"
@@ -109,22 +110,112 @@
 
         <Button
             android:id="@+id/politics_topic_button"
-
-            android:layout_width="350dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_weight="1"
             android:layout_margin="8dp"
-
             android:textAllCaps="false"
             android:text="politics"
             android:fontFamily="@font/sfsemibold"
             android:textSize="16sp"
             android:textColor="@color/grey_darker"
            />
+        <Button
+            android:id="@+id/life_topic_button"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:layout_marginEnd="16dp"
+            android:textAllCaps="false"
+            android:text="life"
+            android:fontFamily="@font/sfsemibold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+        <Button
+            android:id="@+id/animals_topic_button"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:layout_marginEnd="16dp"
+            android:textAllCaps="false"
+            android:text="  Animals"
+            android:fontFamily="@font/sfsemibold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+           />
+
+        <Button
+            android:id="@+id/nature_topic_button"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:text="  Nature"
+            android:fontFamily="@font/sfsemibold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+       />
+        <Button
+            android:id="@+id/food_topic_button"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:layout_marginEnd="16dp"
+            android:textAllCaps="false"
+            android:text="  Food"
+            android:fontFamily="@font/sfsemibold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+           />
+
+        <Button
+            android:id="@+id/art_topic_button"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:textAllCaps="false"
+            android:text=   "Art"
+            android:fontFamily="@font/sfsemibold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+             />
+        <Button
+            android:id="@+id/history_topic_button"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:layout_marginEnd="16dp"
+            android:textAllCaps="false"
+            android:text=" History"
+            android:fontFamily="@font/sfsemibold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/fashion_topic_button"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:textAllCaps="false"
+            android:text="  Fashion"
+            android:fontFamily="@font/sfsemibold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+             />
 
 
     </LinearLayout>
 
+      </HorizontalScrollView>
 
     <ListView
         android:id="@+id/list_view"
@@ -137,7 +228,7 @@
         android:layout_width="42dp"
         android:layout_height="37dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="210dp"
+        android:layout_marginTop="180dp"
         app:srcCompat="@drawable/search" />
 
 

@@ -35,7 +35,7 @@
             android:text="@string/select_some_of_your_favorite_topics_to_let_us_suggest_better_news_for_you"
             android:fontFamily="@font/sfregular"
             android:textSize="16sp"
-
+            android:textColor="@color/grey_primary"
             android:layout_marginTop="8dp"
 
             android:layout_below="@id/select_your_favorite_topics_text_view"
@@ -120,7 +120,6 @@
                 android:textSize="16sp"
                 android:textColor="@color/black"
 
-                
                 android:onClick="toggleButtonSelection"/>
         </LinearLayout>
 
@@ -155,7 +154,6 @@
                 android:layout_width="160dp"
                 android:layout_height="72dp"
                 android:layout_weight="1"
-
                 android:textAllCaps="false"
                 android:text="🌴   Nature"
                 android:fontFamily="@font/sfsemibold"
