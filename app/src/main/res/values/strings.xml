@@ -42,7 +42,7 @@ For more detailed state results click on the States A-Z links at the bottom of t
     <string name="forgot_password">forgot password?</string>
     <string name="email_address">Email address</string>
     <string name="welcome_back">Welcome Back👋</string>
-    <string name="i_am_happy_to_see_you_again_continue_where_you_left_by_sigining_in">I am happy to see you again continue where ypu left by sigining in</string>
+    <string name="i_am_happy_to_see_you_again_continue_where_you_left_by_sigining_in">I am happy to see you again continue where yOU left by signing in</string>
     <string name="Get_started">Get Started</string>
     <string name="All_news_in_one_place_be_the_first_to_know_last_news">All news in one place be the first to know last news</string>
 
