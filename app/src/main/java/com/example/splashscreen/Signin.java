@@ -1,6 +1,10 @@
 package com.example.splashscreen;
+import com.example.splashscreen.LoginFunTask;
 
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,8 +17,10 @@ import android.widget.Toast;
 import android.text.Editable;
 import android.text.TextWatcher;
 
+
 public class Signin extends AppCompatActivity {
     Button bValidate;
+
     EditText etMail;
     EditText etPassword;
     TextView textView;
@@ -26,6 +32,7 @@ public class Signin extends AppCompatActivity {
         setContentView(R.layout.activity_signin);
         etMail = findViewById(R.id.email_address);
         etPassword = findViewById(R.id.password);
+
 
         bValidate = findViewById(R.id.button3);
         textView = findViewById(R.id.textView10);
@@ -84,28 +91,32 @@ public class Signin extends AppCompatActivity {
             startActivity(intent);
         });
 
-        bValidate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                emailValidator(etMail);
-            }
-        });
+        bValidate.setOnClickListener(v -> emailValidator(etMail));
     }
 
     public void emailValidator(EditText etMail) {
-        String emailToText = etMail.getText().toString();
-        String passwordText = etPassword.getText().toString();
+        String email = etMail.getText().toString();
+        String password = etPassword.getText().toString();
+        // Construct the JSON data for user creation
+        String userData = "{\"email\":\"" + email + "\", \"password\":\"" + password + "\"}";
+//        String userData = "{\"firstName\":\"" + username + "\", \"lastName\":\"\", \"username\":\"" + username + "\", \"email\":\"" + email + "\", \"password\":\"" + password + "\"}";
 
-        if (!emailToText.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(emailToText).matches()) {
-            if (!passwordText.isEmpty()) {
+
+        if (!email.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            if (!password.isEmpty()) {
                 Toast.makeText(this, "Email Verified !", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(Signin.this, browse.class);
-                startActivity(intent);
+
+
             } else {
                 Toast.makeText(Signin.this, "Password cannot be empty!", Toast.LENGTH_SHORT).show();
             }
         } else {
             Toast.makeText(this, "Enter a valid Email address !", Toast.LENGTH_SHORT).show();
         }
+        new LoginFunTask(Signin.this).execute(userData);
+        Intent intent = new Intent(Signin.this, selecetfavorite.class);
+        startActivity(intent);
     }
+
+
 }
